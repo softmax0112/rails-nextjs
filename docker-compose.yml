@@ -28,8 +28,8 @@ services:
       POSTGRES_HOST: db
       RAILS_MAX_THREADS: 5
       RAILS_ENV: development
-      GMAIL_USERNAME: testuseremail2022@gmail.com
-      GMAIL_PASSWORD: zzihgdvhlgbesvhb
+      GMAIL_USERNAME: XXXXXXXXXXXXXXXXX
+      GMAIL_PASSWORD: XXXXXXXXXXXXXXXXX
 
   frontend:
     build:
