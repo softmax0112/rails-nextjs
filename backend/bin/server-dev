@@ -1,0 +1,14 @@
+#!/bin/bash -i
+
+if ! [bundle check] ; then
+    bundle install;
+fi
+
+
+bundle exec rails db:migrate 2>/dev/null || bundle exec  rails db:create db:migrate db:seed
+
+# If the container has been killed, there may be a stale pid file
+# preventing rails from booting up
+rm -f tmp/pids/server.pid
+
+bundle exec rails server -p 8080 -b 0.0.0.0
