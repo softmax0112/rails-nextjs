@@ -1,0 +1,52 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+
+  backend:
+    build:
+      context: backend
+    volumes:
+      - ./backend:/usr/src/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    stdin_open: true
+    tty: true
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DATABASE: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_HOST: db
+      RAILS_MAX_THREADS: 5
+      RAILS_ENV: development
+      GMAIL_USERNAME: testuseremail2022@gmail.com
+      GMAIL_PASSWORD: zzihgdvhlgbesvhb
+
+  frontend:
+    build:
+      context: frontend
+    volumes:
+      - ./frontend:/usr/src/app
+    ports:
+      - "3000:3000"
+
+  nginx:
+    restart: always
+    build:
+      context: nginx
+    environment:
+      PORT: 80
+    ports:
+      - "80:80"
+    links:
+      - frontend:frontend
+      - backend:backend

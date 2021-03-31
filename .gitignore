@@ -1,0 +1,8 @@
+backend/tmp
+.history
+tmp
+frontend/node_modules
+backend/.byebug_history
+backend/log/*
+backend/log/development.log
+backend/log
