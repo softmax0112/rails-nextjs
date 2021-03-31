@@ -1,0 +1,97 @@
+.login_card_container {
+  max-width: 477px;
+  height: auto;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+.login_header {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: var(--title);
+  text-align: center;
+}
+
+.form_container {
+  width: 100%;
+}
+
+.login_form {
+  width: 100%;
+}
+
+.login_form > label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--darkText);
+  opacity: 0.7;
+  line-height: 140%;
+}
+
+.text_input {
+  box-sizing: border-box;
+  outline-color: var(--blackButton);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 13px 16px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.text_input::placeholder {
+  opacity: 0.3;
+}
+
+.text_input_error {
+  box-sizing: border-box;
+  outline-color: var(--redButton);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-radius: 3px;
+  padding: 13px 16px;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.auth_form_error {
+  background-color: #ec635952;
+  margin-top: 16px;
+  padding: 13px 16px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.text_input_error::placeholder {
+  opacity: 0.3;
+}
+
+.login_card_container button {
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login_button {
+  width: 100%;
+  color: white;
+  background-color: var(--blueButton);
+  margin-top: 17px;
+  border: none;
+}
+
+.login_button:disabled {
+  background-color: #cccccc;
+  cursor: auto;
+}
+
+.contact_form_error {
+  color: var(--redButton);
+}

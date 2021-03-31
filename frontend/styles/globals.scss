@@ -1,0 +1,33 @@
+html,
+
+:root{
+  --light: #FFFFFF;
+  --darkBlue: #37447E;
+
+  --blackButton: #111B47;
+  --blueButton: #446BE5;
+  --redButton: #F26358;
+  --nav: #F3F4F4;
+
+
+  --darkText: #091133;
+  --title: #111B47;
+  --lightDarkText: #5D6970;
+  --lightText: #929ECC;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

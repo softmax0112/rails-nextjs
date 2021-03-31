@@ -1,0 +1,138 @@
+
+.providers_container{
+  margin: 120px 200px;
+}
+
+.providers_container > h3 {
+  font-weight: 500;
+  font-size: 32px;
+  color:  var(--darkText);
+}
+
+
+.card_container{
+  width: 330px;
+  height: auto;
+  background: #F3F4F4;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(52.8537px);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.provider_img{
+  border-radius: 6px;
+}
+
+.description_container{
+  width: 100%;
+}
+
+.description_container > h4{
+  color: var(--title);
+  font-weight: 500;
+  font-size: 36px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.location_container{
+  display: flex;
+  align-items: center;
+}
+
+.location_container > p{
+  margin-left: 10px;
+}
+
+
+.sub_container{
+  display: flex;
+  align-items: center;
+}
+
+.sub_container > h4{
+  margin: 0px 0px 0px 5px;
+  color: --var(darkText);
+  padding: 0px;
+}
+
+.speciality > p{
+  margin: 10px;
+}
+
+.contact_form_error {
+  color: var(--redButton);
+}
+
+.admin_button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+
+.left_edit_panel_form{
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+  max-height: 450px;
+}
+
+.input_container{
+  padding: 0px; 
+}
+
+.input_container > label{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+  input{
+    margin: 10px 0px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    outline-color: --var(blueButton);
+    border-color: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
+    border-radius: 3px;
+  }
+}
+
+
+.diable_input{
+  background: #BABABA26;
+}
+
+.providers_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+
+// .spinner {
+//   // The height here is just for demo purposes
+//   height: 100vh;  
+//   position: relative;
+  
+//   &::before {
+//       border: solid 3px #eee;
+//       border-bottom-color: #EF6565;
+//       border-radius: 50%;
+//       content: "";
+//       height: 40px;
+//       left: 50%;
+//       position: absolute;
+//       top: 50%;
+//       transform: translate3d(-50%, -50%, 0);
+//       width: 40px;
+//   }
+// }
+
