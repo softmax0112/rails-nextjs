@@ -1,4 +1,4 @@
-# Ruby on Rails API + React
+# Ruby on Rails API + Nextjs
 
 I have created a full-stack app with the functionality of adding and deleting Providers on the front end by using CRUD APIs.
 
